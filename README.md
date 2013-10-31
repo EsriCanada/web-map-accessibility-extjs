@@ -2,7 +2,6 @@ web-map-accessibility-extjs
 ===========================
 
 WCAG 2.0 compliant web map using Sencha Ext JS
------------------------------------------------
 
 ## Description
 This application originate from the Agriculture and Agri-Food Canada (AAFC) website http://www.agr.gc.ca/atlas/agpv, which complies to the Web Content Accessibility Guideline (WCAG) 2.0.   Please note that per the Standard on Web Accessibility defined by the Treasury Board of Canada, complex maps are part of the list of exclusion (see details). Complex maps are defined as map that associates information with one or more locations that cannot be represented by postal addresses or proper names such as intersection, landmarks, cities, or regions.  An examples of a complex map is one that shows the location and intensity of precipitation detected by RADAR network. 

@@ -14,15 +14,15 @@ Information on this website has been posted with the intent that it be readily a
 
 Users are required to:
 
-Exercise due diligence in ensuring the accuracy of the information reproduced;
-Indicate both the complete title of the information reproduced, as well as the author organization; and
-Indicate that the reproduction is a copy of an official work that is published by the Government of Canada and that the reproduction has not been produced in affiliation with, or with the endorsement of the Government of Canada.
-Unless otherwise specified, this authorization is also applicable to all published information regardless of its format.
+* Exercise due diligence in ensuring the accuracy of the information reproduced;
+* Indicate both the complete title of the information reproduced, as well as the author organization; and
+* Indicate that the reproduction is a copy of an official work that is published by the Government of Canada and that the reproduction has not been produced in affiliation with, or with the endorsement of the Government of Canada.
+* Unless otherwise specified, this authorization is also applicable to all published information regardless of its format.
 
 ### Commercial Reproduction
 Unless otherwise specified, you may not reproduce any information on this site, in whole or in part, for the purposes of commercial redistribution without prior written permission from the Government of Canada's copyright administrator, Public Works and Government Services Canada. To obtain permission to reproduce Government of Canada information on this site for commercial purposes, Apply for Crown Copyright Clearance or write to:
 
-#### Public Works and Government Services Canada
+Public Works and Government Services Canada
 Publishing and Depository Services
 350 Albert Street, 4th Floor
 Ottawa, ON

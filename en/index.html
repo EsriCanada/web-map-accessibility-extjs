@@ -1,0 +1,38 @@
+<html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Web Accessibility for Complex Map</title>
+    <link href="http://apps.esri.ca/wcag/EMAF_extjs/resources/css/ext-all-scoped.css" rel="stylesheet">
+    <link href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.4/js/esri/css/esri.css" rel="stylesheet">
+    <link href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.4/js/dojo/dijit/themes/claro/claro.css" rel="stylesheet">
+    <link href="http://apps.esri.ca/wcag/EMAF/css/core.css" rel="stylesheet">
+</head>
+<body class="claro">
+<div id="extjsApp"></div>
+<script>
+//<![CDATA[
+djConfig = {parseOnLoad:true, locale: "en"}; 
+Ext = {buildSettings:{"scopeResetCSS": true}};
+//]]>
+</script>
+<script src="http://apps.esri.ca/wcag/EMAF_extjs/ext-all.js"></script>
+<script src="http://apps.esri.ca/wcag/locale/ext-lang-en.js"></script>
+<script src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.4"> </script>
+<script src="http://apps.esri.ca/wcag/EMAF/js/core.js"></script>
+<script src="http://apps.esri.ca/wcag/EMAF/js/view_vis.js"></script>
+<script>
+//<![CDATA[
+ var app = null;           
+ Ext.onReady(              
+     function(){           
+         app = Ext.create("ca.esri.apps.view_vis.Application");   
+     }                     
+ );                        
+
+//]]>
+</script>
+
+
+</body>
+</html>

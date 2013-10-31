@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) 3.0.6 / Boîte à outils de l'expérience Web (BOEW) 3.0.6wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
+    <title>Geospatial Platform Viewer (Demonstration)</title>
+    <link href="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/theme-gcwu-fegc/images/favicon.ico" rel="shortcut icon">
+    <meta content="Date published (2000-01-01)" name="dcterms.issued">
+    <meta content="Date published (2000-01-01)" name="dcterms.modified">
+    <meta content="" name="dcterms.format" title="gcformat">
+    <meta content="Geospatial Platform Viewer" name="dcterms.title">
+    <meta content="Geomatics;Maps" name="dcterms.subject">
+    <meta content="English description" name="dcterms.description">
+    <meta content="eng" name="dcterms.language">
+    <meta content="English keywords" name="keywords">
+    <meta content="" name="dcterms.audience" title="gcaudience">
+    <meta content="biography" name="dcterms.type" title="gctype">
+    <meta content="Government of Canada" name="dcterms.creator">
+    <meta content="" name="dcterms.spatial" title="gcregions">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="English description" name="description">
+    <script src="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/js/jquery.min.js"></script>
+    <!--[if lte IE 8]><script src="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/js/polyfills/html5shiv-min.js"></script><link rel="stylesheet" href="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/grids/css/util-ie-min.css" /><link rel="stylesheet" href="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/js/css/pe-ap-ie-min.css" /><link rel="stylesheet" href="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/theme-gcwu-fegc/css/theme-ie-min.css" /><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link href="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/grids/css/util-min.css" rel="stylesheet">
+    <link href="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/js/css/pe-ap-min.css" rel="stylesheet">
+    <link href="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/theme-gcwu-fegc/css/theme-min.css" rel="stylesheet">
+    <!--<![endif]-->
+    <noscript>
+        <link href="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/theme-gcwu-fegc/css/theme-ns-min.css" rel="stylesheet">
+    </noscript>
+    <!-- CustomScriptsCSSStart -->
+    <link href="http://www.agr.gc.ca/atlas/res/aafc-aac3.0.6/css/theme.css" rel="stylesheet">
+    <link href="http://www.agr.gc.ca/atlas/res/aafc-aac3.0.6/css/util.css" rel="stylesheet">
+    <!--[if lte IE 8]><link rel="stylesheet" href="http://www.agr.gc.ca/atlas/res/aafc-aac3.0.6/css/theme-ie.css" /><link rel="stylesheet" href="http://www.agr.gc.ca/atlas/res/aafc-aac3.0.6/css/util-ie.css" /><![endif]-->
+    <script src="http://www.agr.gc.ca/atlas/res/aafc-aac3.0.6/js/util.js"></script>
+    <!-- CustomScriptsCSSEnd -->
+    <link href="http://apps.esri.ca/wcag/EMAF_extjs/resources/css/ext-all-scoped.css" rel="stylesheet">
+    <link href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.4/js/esri/css/esri.css" rel="stylesheet">
+    <link href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.4/js/dojo/dijit/themes/claro/claro.css" rel="stylesheet">
+    <link href="http://apps.esri.ca/wcag/EMAF/css/core.css" rel="stylesheet">
+</head>
+
+<body class="claro">
+    <div id="wb-body">
+        <div id="wb-skip">
+            <ul id="cn-tphp">
+                <li id="wb-skip1">
+                    <a href="#wb-cont">Skip
+                            to
+                            main
+                            content</a>
+                </li>
+                <li id="wb-skip2">
+                    <a href="#wb-nav">Skip
+                                    to
+                                    footer</a>
+                </li>
+            </ul>
+        </div>
+        <!-- PL-XSLT-ID:PREVIEW_MENU -->
+        <div id="wb-head">
+            <div id="wb-head-in">
+                <header>
+                    <!-- HeaderStart -->
+                    <nav role="navigation">
+                        <div id="gcwu-gcnb">
+                            <h2>Government of Canada navigation bar</h2>	
+                            <div id="gcwu-gcnb-in">
+                                <div id="gcwu-gcnb-fip">
+                                    <div id="gcwu-sig">
+                                        <div id="gcwu-sig-in">
+                                            <div id="gcwu-sig-eng" title="Government of Canada">
+                                                <img alt="Government of Canada" height="20" src="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/theme-gcwu-fegc/images/sig-eng.gif" width="214">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li id="gcwu-gcnb1">
+                                            <a href="http://www.canada.gc.ca/menu-eng.html" rel="external">Canada.gc.ca</a>
+                                        </li>
+                                        <li id="gcwu-gcnb2">
+                                            <a href="http://www.servicecanada.gc.ca/eng/home.shtml" rel="external">Services</a>
+                                        </li>
+                                        <li id="gcwu-gcnb3">
+                                            <a href="http://www.canada.gc.ca/aboutgov-ausujetgouv/depts/menu-eng.html" rel="external">Departments</a>
+                                        </li>
+                                        <li id="gcwu-gcnb-lang">
+                                            <a href="?lang=fr" lang="fr">Fran&ccedil;ais</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div id="gcwu-bnr" role="banner">
+                        <div id="gcwu-bnr-in">
+                            <div id="gcwu-wmms">
+                                <div id="gcwu-wmms-in">
+                                    <div id="gcwu-wmms-fip" title="Symbol of the Government of Canada">
+                                        <img alt="Symbol of the Government of Canada" height="30" src="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/theme-gcwu-fegc/images/wmms.gif" width="126">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gcwu-title">
+                                <p id="gcwu-title-in">
+                                    <a href="/index_e.php">Government of Canada</a>
+                                </p>
+                            </div>
+                            <section>
+                                <div id="gcwu-srchbx" style="display: none;">
+                                    <h2>Search</h2>	
+                                    <form action="http://srch-rech.agr.gc.ca/srch-rech/query/aafc-aac-eng.xml" method="get" role="search">
+                                        <div id="gcwu-srchbx-in">
+                                            <label for="gcwu-srch">Search website
+                                            </label>
+                                            <input id="gcwu-srch" maxlength="150" name="q" size="27" type="search" value="">
+                                            <input data-icon="search" id="gcwu-srch-submit" name="gcwu-srch-submit" type="submit" value="Search">
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div id="wb-core">
+            <div class="equalize" id="wb-core-in">
+                <div id="wb-main" role="main">
+                    <div id="wb-main-in">
+                        <!--MainContentStart-->
+                        <h1 id="wb-cont">Geospatial
+                                                                Platform
+                                                                Viewer</h1>
+                        <div class="claro" id="extjsApp"></div>
+                        <dl id="gcwu-date-mod" role="contentinfo"><dt>Date Modified: </dt>
+                            <dd><span><time>2000-01-01</time></span>
+                            </dd>
+                        </dl>
+                        <div class="clear"></div>
+                        <!--MainContentEnd-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wb-foot">
+            <div id="wb-foot-in">
+                <footer>
+                    <h2 id="wb-nav">Footer</h2>
+                    <!-- FooterStart -->
+                    <nav role="navigation">
+                        <div id="gcwu-sft">
+                            <h3>Site footer</h3>
+                            <div id="gcwu-sft-in">
+                                <div id="gcwu-tctr">
+                                    <ul>
+                                        <li class="gcwu-tc">
+                                            <a href="http://www.agr.gc.ca/eng/about-us/terms-and-conditions/?id=1367245286657" rel="license">Terms
+                                                                                                                        and
+                                                                                                                        Conditions</a>
+                                        </li>
+                                        <li class="gcwu-tr">
+                                            <a href="http://www.agr.gc.ca/eng/about-us/transparency/?id=1360881288492">Transparency</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                                <section>
+                                    <div class="span-2">
+                                        <h4 class="gcwu-col-head"><a href="http://www.esri.ca">About Us</a></h4>
+                                        <ul></ul>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="span-2">
+                                        <h4 class="gcwu-col-head"><a href="http://www.esri.ca/en/content/contact-us">Contact Us</a></h4>
+                                        <ul></ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav role="navigation">
+                        <div id="gcwu-gcft">
+                            <h3>Government of Canada footer</h3>	
+                            <div id="gcwu-gcft-in">
+                                <div id="gcwu-gcft-fip">
+                                    <ul>
+                                        <li>
+                                            <a href="http://healthycanadians.gc.ca/index-eng.php" rel="external"><span>Health</span>
+                                                                                                                                            <br>healthycanadians.gc.ca</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.voyage.gc.ca/index-eng.asp" rel="external"><span>Travel</span>
+                                                                                                                                            <br>travel.gc.ca</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.servicecanada.gc.ca/eng/home.shtml" rel="external"><span>Service Canada</span>
+                                                                                                                                            <br>servicecanada.gc.ca</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.jobbank.gc.ca/intro-eng.aspx" rel="external"><span>Jobs</span>
+                                                                                                                                            <br>jobbank.gc.ca</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://actionplan.gc.ca/en" rel="external"><span>Economy</span>
+                                                                                                                                            <br>actionplan.gc.ca</a>
+                                        </li>
+                                        <li id="gcwu-gcft-ca">
+                                            <div>
+                                                <a href="http://www.canada.gc.ca/menu-eng.html" rel="external">Canada.gc.ca</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- FooterEnd -->
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- ScriptsStart -->
+    <script src="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/theme-gcwu-fegc/js/theme-min.js"></script>
+    <script src="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/js/settings.js"></script>
+    <script src="http://www.agr.gc.ca/atlas/res/wet-boew3.0.6/dist/js/pe-ap-min.js"></script>
+    <!-- ScriptsEnd -->
+    <script>
+        //<![CDATA[
+        djConfig = {
+            parseOnLoad: true,
+            locale: "en"
+        };
+        Ext = {
+            buildSettings: {
+                "scopeResetCSS": true
+            }
+        };
+
+         //]]>
+    </script>
+	<script src="http://apps.esri.ca/wcag/EMAF_extjs/ext-all.js"></script>
+	<script src="http://apps.esri.ca/wcag/locale/ext-lang-en.js"></script>
+	<script src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.4"> </script>
+	<script src="http://apps.esri.ca/wcag/EMAF/js/core.js"></script>
+	<script src="http://apps.esri.ca/wcag/EMAF/js/view_vis.js"></script>
+    <script>
+        //<![CDATA[
+        var app = null;
+        Ext.onReady(
+            function () {
+                app = Ext.create("ca.esri.apps.view_vis.Application");
+            }
+        );
+
+         //]]>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+#Core_Map-body:focus {border: 1px dotted !important;}
+#Core_Map-body:blur {border: none !important;}
+
+
+#Core_Toolbar {
+    background:transparent url('../images/white.gif') repeat 0 0 !important;
+}
+
+#Core_Toolbar .x-btn-default-toolbar-large .x-btn-inner{
+    padding-left:18px;
+    font-size: 13px;
+}
+
+#Core_Toolbar .no-icon-toolbarbutton .x-btn-inner  {
+    padding-left: 2px;
+}
+
+/*
+#Core_Toolbar .icon-zoomfull {
+    background-image:url('../images/tools/i_zoomfull.png') !important;
+    background-repeat:no-repeat;
+}
+*/
+
+#Core_Toolbar .icon-renderer {
+    background-image:url('../images/tools/Layers16.png') !important;
+    background-repeat:no-repeat;
+}
+
+#Core_Toolbar .icon-legend {
+    background-image:url('../images/tools/Legend16.png') !important;
+    background-repeat:no-repeat;
+}
+
+#Core_Toolbar .icon-layerlist {
+    background-image:url('../images/tools/Layers16.png') !important;
+    background-repeat:no-repeat;
+}
+
+/*
+#Core_Toolbar .icon-search {
+    background-image:url('../images/tools/i_search.gif') !important;
+    background-repeat:no-repeat;
+}
+
+#Core_Toolbar .icon-bookmark {
+    background-image:url('../images/tools/Bookmark16.png') !important;
+    background-repeat:no-repeat;
+}
+
+#Core_Toolbar .icon-about {
+    background-image:url('../images/tools/i_about.png') !important;
+    background-repeat:no-repeat;
+}
+
+#Core_Toolbar .icon-help {
+    background-image:url('../images/tools/i_help.png') !important;
+    background-repeat:no-repeat;
+}
+*/
+
+#Core_Toolbar .icon-link {
+    background-image:url('../images/tools/LinkTo16.png') !important;
+    background-repeat:no-repeat;
+}
+
+#Core_Toolbar .icon-measure {
+    background-image:url('../images/tools/Measure_Area16.png') !important;
+    background-repeat:no-repeat;
+}
+
+#Core_Toolbar .icon-addlayer {
+    background-image:url('../images/tools/AddContent16.png') !important;
+    background-repeat:no-repeat;
+}
+
+#Core_Toolbar .icon-printmap {
+    background-image:url('../images/tools/GenericPrint_B_16.png') !important;
+    background-repeat:no-repeat;
+}
+
+#Core_Toolbar .icon-changebasemap {
+    background-image:url('../images/tools/Basemap16.png') !important;
+    background-repeat:no-repeat;
+}
+
+#BimatToggleLayerWindow .icon-node{
+    background-image:url('../images/tools/tree_group.png') !important;
+    background-repeat:no-repeat;
+}
+
+#BimatToggleLayerWindow .icon-leaf{
+    background-image:url('../images/tools/tree_layer.png') !important;
+    background-repeat:no-repeat;
+}
+
+#BimatToggleLayerWindow .icon-leaf-disabled{
+    background-image:url('../images/tools/tree_layer_disabled.png') !important;
+    background-repeat:no-repeat;
+}
+
+#LayerListWindow .icon-group,
+#DownloadWindow .icon-group {
+    background-image:url('../images/tools/tree_group.png') !important;
+    background-repeat:no-repeat;
+}
+
+#LayerListWindow .icon-layer,
+#DownloadWindow .icon-layer {
+    background-image:url('../images/tools/tree_layer.png') !important;
+    background-repeat:no-repeat;
+}
+
+#LayerListWindow .enabled-node,
+#DownloadWindow .enabled-node {
+    opacity: 1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+
+#LayerListWindow .disabled-node,
+#DownloadWindow .disabled-node {
+    opacity: 0.3;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+}
+
+#LayerListWindow .action_arrow{
+    background-image:url('../images/tools/tree_contextmenu.png') !important;
+    background-repeat:no-repeat;
+}
+
+#LayerListWindow .x-action-col-cell img {
+  height: 16px;
+  width: 16px;
+}
+
+/*
+#LayerListWindow .x-action-col-cell img:focus {border: 1px dotted;}
+#LayerListWindow .x-action-col-cell img:blur {border: none;}
+
+#LayerListWindow .x-grid-view:focus{outline: 1px dotted;}
+#LayerListWindow .x-grid-view:blur{outline: none;}
+
+#LayerListWindow .x-tree-checkbox:focus{background-position: 0px -26px; }
+#LayerListWindow .x-tree-checkbox:blur{background-position: 0 -13px; }
+*/
+
+#GeocoderPanel {
+    border: 2px solid #666666;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#GeocoderPanel .x-form-text, .x-reset textarea.x-form-field {
+    background-color: white;
+    background-image: none;
+    border: 0;
+}
+
+#GeocoderTrigger .x-trigger-cell {
+    vertical-align: middle;
+    padding: 5px 0;
+}
+
+#GeocoderTrigger .x-form-field {
+    height: 28px;
+}
+
+#GeocoderTrigger input {
+    font-size: 14px;
+    margin: -2px;
+}
+
+.ie7 #GeocoderTrigger input {
+    margin: 0;
+}
+
+#GeocoderTrigger input:focus{
+    box-shadow: none;
+    border: 1px dotted;
+}
+
+#GeocoderTrigger input:blur{
+    border: none;
+}
+
+#GeocoderTrigger .geocoder-trigger {
+    background: transparent url('../images/search.png') no-repeat 0 0;
+    border: none;
+}
+
+#OpacityWindowSlider:focus{border: 1px dotted;}
+#OpacityWindowSlider:blur{border: none;}
+
+
+/****************************************************************************************
+    ExtJs overrides
+****************************************************************************************/
+.x-reset .x-tab button {
+    color: #146894;
+}
+
+.x-reset .x-tab-active button {
+    color: #004080;
+}
+
+.x-reset div.no-icon-menu a.x-menu-item-link {
+    padding-left: 0;
+}
+
+/****************************************************************************************
+    ExtJs extensions for WCAG
+****************************************************************************************/
+.x-reset .x-btn-center:focus{border: 1px dotted;}
+.x-reset .x-btn-center:blur{border: none;}
+
+.x-reset .x-tool img:focus{outline: 1px dotted;}
+.x-reset .x-tool img:blur{outline: none;}
+
+.x-reset .x-grid-cell-inner img.x-tree-expander:focus{border: 1px dotted;}
+.x-reset .x-grid-cell-inner img.x-tree-expander:blur{border: none;}
+/*
+.x-reset .x-grid-view:focus{border: 1px dotted;}
+.x-reset .x-grid-view:blur{border: none;}
+*/
+
+.x-reset .x-tab button:focus{border: 1px dotted;}
+.x-reset .x-tab button:blur{border: none;}
+
+/****************************************************************************************
+    ExtJs overrides to combat the WET Template
+****************************************************************************************/
+
+.x-reset label,
+.x-reset input {
+    display: inline;
+}
+
+.x-reset input {
+    min-height: 0 !important;
+    border-radius: 0;
+}
+
+.x-reset table * {
+    border-style: none;
+}
+
+.x-reset table{
+    background-color: transparent;
+}
+
+.x-reset table,
+.x-reset img {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.x-reset legend:after {
+    content: none;
+}
+
+.ie7 .x-reset label {
+    min-width: 0;
+    zoom: 0;
+}
+
+.ie7 .x-reset table td {
+    vertical-align: inherit;
+}
+
+.ie7 #wb-core-in {
+    background-image: url(../images/content-deco-side.gif), url(../images/content-deco-side.gif);
+    background-color: #fff;
+    background-repeat: repeat-y
+}
+.ie7 #gcwu-bc-in {
+    background-image: url(../images/content-deco-side.gif), url(../images/content-deco-side.gif);
+    background-color: #fff;
+    background-repeat: repeat-y
+}
+
+.ie8 #wb-core-in {
+    background-image: url(../images/content-deco-side.gif), url(../images/content-deco-side.gif);
+    background-color: #fff;
+    background-repeat: repeat-y
+}
+.ie8 #gcwu-bc-in {
+    background-image: url(../images/content-deco-side.gif), url(../images/content-deco-side.gif);
+    background-color: #fff;
+    background-repeat: repeat-y
+}
+
+/****************************************************************************************
+    ESRI overrides
+****************************************************************************************/
+.esriLargeSlider{
+    top: 20px;
+    left: 20px;
+}
+
+.esriOverviewMap .ovwButton:focus {border: 1px dotted;}
+.esriOverviewMap .ovwButton:blur {border: none;}
+
+.esriOverviewMap .ovwHighlight:focus {outline: 2px dotted;}
+.esriOverviewMap .ovwHighlight:blur {outline: none;}
+
+a:focus .esriBasemapGalleryThumbnail {border: 1px dotted;}
+a:blur .esriBasemapGalleryThumbnail:blur {border: none;}
+
+.simpleGeocoder .esriGeocoderContainer {
+    width: 275px;
+}
+
+.simpleGeocoder .esriGeocoder input {
+    width: 240px;
+}
+
+.esriLegendServiceLabel {
+   display: none;
+}
+.esriLegendLayerLabel {
+   font-weight: bold;
+}
+
+#MeasureWindowPanel .esriMeasurement .esriButtonFocused {
+    border: 1px dotted;
+}
+
+#MeasureWindowPanel .esriMeasurement .esriToggleButtonFocused .dijitButtonText {
+    border: 1px dotted;
+}
+#MeasureWindowPanel .esriMeasurement .esriToggleButtonFocused .dijitArrowButtonInner {
+    border: 1px dotted;
+}
+
+#MeasureWindowPanel .esriMeasurement .esriButton .dijitButtonNode{
+    height: 32px;
+}
+
+/****************************************************************************************
+    ESRI overrides for esriSignInDialog
+****************************************************************************************/
+.esriSignInDialog {
+    top: 100px !important;
+}
+
+.esriSignInDialog .dijitTextBox,
+.esriSignInDialog .dijitInputInner {
+    border: 1px solid;
+}
+
+.esriSignInDialog table{
+    margin: 0px;
+}
+
+.esriSignInDialog table th,
+.esriSignInDialog table td
+{
+    border: none;
+    padding: 0px;
+}
+
+.esriSignInDialog table label,
+.esriSignInDialog table td
+{
+    display: inline;
+    margin: 0px;
+}
+
+
+/****************************************************************************************
+    Fujitsu - NAIS and Fence styling
+****************************************************************************************/
+#Core_Toolbar .icon-fence {
+    background-image:url('../images/tools/Fence-icon.png') !important;
+    background-repeat:no-repeat;
+}
+
+#Core_Toolbar .icon-nais {
+    background-image:url('../images/tools/nais-icon.png') !important;
+    background-repeat:no-repeat;
+}
+
